@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+
+  <title>Numerals</title>
+  <meta name='description' content='Roman Numeral Converter'>
+  <meta name='author' content='enceeobee'>
+
+  <link rel='stylesheet' href='styles.css'>
+  <link rel='icon' href='favicon.ico'>
+</head>
+
+<body>
+  <h1>Numerals!</h1>
+
+  <p>Convert roman numerals to arabic numbers and vice versa.</p>
+
+  <p>Use <em>escape</em> to clear fields.</p>
+
+  <div class='converter-container'>
+    <div class='item roman-numeral-container'>
+      <input id='romanInput' type='text' placeholder='Enter a roman numeral' />
+    </div>
+    <div class='item divider'>
+      <button id='clearButton'>Clear</button>
+    </div>
+    <div class='item arabic-numeral-container'>
+        <input id='arabicInput' type='tel' placeholder='Enter an arabic number' />
+    </div>
+
+    <div class='item error'></div>
+  </div>
+
+  <script src='index.js'></script>
+</body>
+</html>

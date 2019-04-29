@@ -1,0 +1,51 @@
+html {
+  /* border-box box model allows us to add padding and border to our elements without increasing their size */
+  box-sizing: border-box;
+  /* A system font stack so things load nice and quick! */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+h1, p {
+  text-align: center;
+}
+
+.converter-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr 3fr;
+  grid-gap: 10px;
+  align-items: center;
+  justify-items: center;
+
+  max-width: 800px;
+  margin: auto;
+  border: 1px solid #369;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+@media (max-width: 800px) {
+  .converter-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+input {
+  font-size: 24px;
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+input::placeholder {
+  text-transform: none;
+}
+
+button {
+  font-size: 24px;
+  padding: 10px;
+}
+
+.error {
+  color: darkred;
+  grid-column: 1 / -1
+}

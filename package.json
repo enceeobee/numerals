@@ -1,0 +1,39 @@
+{
+  "name": "numerals",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel public/index.html",
+    "build": "parcel build public/index.html",
+    "lint": "standard",
+    "lint-fix": "standard --fix",
+    "test": "jest",
+    "test-dev": "jest --watchAll --runInBand"
+  },
+  "babel": {
+    "env": {
+      "test": {
+        "plugins": [
+          "transform-es2015-modules-commonjs"
+        ]
+      }
+    }
+  },
+  "standard": {
+    "global": [
+      "describe",
+      "expect",
+      "it"
+    ],
+    "ignore": [
+      "dist"
+    ]
+  },
+  "devDependencies": {
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "jest": "^24.7.1",
+    "parcel-bundler": "^1.12.3",
+    "standard": "^12.0.1"
+  }
+}
